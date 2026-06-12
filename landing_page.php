@@ -287,10 +287,9 @@ body{
         </div>
 
         <div class="nav-links">
-            <a href="landing_page.php" class="active">Documentation</a>
             <a href="register.php">Register</a>
             <a href="login.php">Login</a>
-            <a href="dashboard.php">Dashboard</a>
+            <a href="landing_page.php" class="active">Dashboard</a>
         </div>
 
     </nav>
