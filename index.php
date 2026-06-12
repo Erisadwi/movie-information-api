@@ -26,34 +26,88 @@ $total_copy = $dataCopy['total'];
 <style>
 body{
     margin:0;
-    font-family:Arial;
-    background: linear-gradient(135deg, #0f2027, #2c5364, #6a82fb);
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #2c5364,
+        #6a82fb
+    );
     color:#333;
     min-height:100vh;
+    padding-top:90px;
 }
 .header{
     text-align:center;
     padding:40px 20px;
     color:white;
 }
-.logout{
-    position:absolute;
-    right:30px;
-    top:20px;
-}
-.logout button{
-    padding:8px 16px;
-    background:red;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-}
+
 .container{
-    width:90%;
+    width:100%;
     max-width:1100px;
     margin:auto;
 }
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    background:#102452;
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    box-sizing:border-box;
+}
+
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-right a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:17px;
+    padding:12px 24px;
+    border-radius:10px;
+    transition:all .3s ease;
+}
+
+.nav-right a:hover{
+    color:#ffffff;
+    background:rgba(255,255,255,0.15);
+    text-shadow:0 0 10px rgba(255,255,255,0.8);
+    transform:translateY(-2px)
+}
+
+.logout-btn{
+    background:#ff2d3e !important;
+}
+
+.logout-btn:hover{
+    background:#e11d48 !important;
+}
+
 .card-info{
     background:white;
     padding:20px;
@@ -172,13 +226,32 @@ button{
     font-size:14px;
     backdrop-filter: blur(6px);
 }
+
+.footer{
+    background:#f3f4f6;
+    border-top:1px solid #d9dce1;
+    text-align:center;
+    padding:18px;
+    color:#7b7f86;
+    font-size:14px;
+    margin-top:40px;
+}
+
 </style>
 </head>
 <body>
 
-<div class="logout">
-    <a href="logout.php"><button>Logout</button></a>
-</div>
+<nav class="navbar">
+
+    <div class="logo">
+        🎬 Movie API
+    </div>
+
+    <div class="nav-right">
+        <a href="logout.php" class="logout-btn">Logout</a>
+    </div>
+
+</nav>
 
 <div class="header">
     <h1>🚀 API Hub - Movie</h1>
@@ -312,5 +385,10 @@ function testAPI(){
 }
 
 </script>
+
+<footer class="footer">
+    Movie API • Provider of Movie Services • 2026
+</footer>
+
 </body>
 </html>

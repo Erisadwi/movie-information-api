@@ -73,7 +73,7 @@ button:hover{ background:#141e30; }
 <body>
 
 <div class="card">
-    <h1>🎬 MOVIE</h1>
+    <h1>🎬 MOVIE API</h1>
     <h3>Register</h3>
 
     <form method="POST">
