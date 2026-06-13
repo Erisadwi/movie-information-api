@@ -316,9 +316,10 @@ body{
             </a>
         </li>
             <li>Login to your account to get your API Key.</li>
-            <li>Copy your API Key from Dashboard.</li>
-            <li>Add API Key in request header.</li>
-            <li>Send request to endpoint.</li>
+            <li>If you are using Postman, copy your API Key from the Dashboard and add it to the request header.</li>
+            <li>If you are using the Web Client, simply log in to your account. The API Key will be sent automatically by the system./li>
+            <li>Send requests to the available endpoints.</li>
+            <li>View and manage the returned data directly through the website.</li>
         </ol>
 
     </div>
