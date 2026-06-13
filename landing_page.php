@@ -186,8 +186,6 @@ body{
     line-height:2;
 }
 
-/* ENDPOINT */
-
 .endpoint{
     background:#f4f6fb;
     margin-top:20px;
@@ -228,8 +226,6 @@ body{
 .endpoint-body{
     padding:20px;
 }
-
-/* CODE BOX */
 
 .code{
     background: linear-gradient(
@@ -278,8 +274,6 @@ body{
 
 <div class="container">
 
-    <!-- NAVBAR -->
-
     <nav class="navbar">
 
         <div class="logo">
@@ -293,8 +287,6 @@ body{
         </div>
 
     </nav>
-
-    <!-- HERO -->
 
     <div class="hero">
 
@@ -311,8 +303,6 @@ body{
         </a>
 
     </div>
-
-    <!-- GETTING STARTED -->
 
     <div class="card">
 
@@ -333,8 +323,6 @@ body{
 
     </div>
 
-    <!-- AUTH -->
-
     <div class="card">
 
         <h2>🔐 Authentication</h2>
@@ -351,13 +339,9 @@ body{
 
     </div>
 
-    <!-- ENDPOINTS -->
-
     <div class="card">
 
         <h2>📘 API Endpoints</h2>
-
-        <!-- GET ALL -->
 
         <div class="endpoint">
 
@@ -380,8 +364,6 @@ body{
             </div>
 
         </div>
-
-        <!-- GET BY ID -->
 
         <div class="endpoint">
 
@@ -407,8 +389,6 @@ body{
 
         </div>
 
-        <!-- POST -->
-
         <div class="endpoint">
 
             <div class="endpoint-header">
@@ -431,8 +411,6 @@ body{
             </div>
 
         </div>
-
-        <!-- PUT -->
 
         <div class="endpoint">
 
@@ -457,8 +435,6 @@ body{
 
         </div>
 
-        <!-- DELETE -->
-
         <div class="endpoint">
 
             <div class="endpoint-header">
@@ -482,9 +458,7 @@ body{
         </div>
 
     </div>
-
-    <!-- POSTMAN -->
-
+    
     <div class="card">
 
         <h2>📬 Using API with Postman</h2>
