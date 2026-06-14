@@ -105,21 +105,26 @@ body{
 
 .hero{
     margin-top:25px;
-    padding:70px 40px;
+    padding:90px 40px;
     text-align:center;
     color:white;
     border-radius:20px;
+    position:relative;
+    overflow:hidden;
 
-    background:linear-gradient(
-        135deg,
-        #4f46e5,
-        #7c3aed
-    );
+    background:
+    linear-gradient(
+        rgba(158, 154, 154, 0.25),
+        rgba(255, 255, 255, 0.45)
+    ),
+    url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920');
 
-    box-shadow:
-        0 25px 50px rgba(79,70,229,.45);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-    border:1px solid rgba(255,255,255,.2);
+    box-shadow:0 25px 50px rgba(0,0,0,.45);
+    border:1px solid rgba(255,255,255,.15);
 }
 
 .hero{
@@ -130,38 +135,72 @@ body{
 .hero::before{
     content:"";
     position:absolute;
-
-    top:-50%;
-    left:-20%;
-
-    width:500px;
-    height:500px;
-
+    top:-100px;
+    left:-100px;
+    width:300px;
+    height:300px;
     background:rgba(255,255,255,.08);
     border-radius:50%;
+}
 
-    pointer-events:none;
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(16,36,82,.45),
+        rgba(79,70,229,.15)
+    );
+
+    z-index:1;
 }
 
 .hero h1{
-    font-size:52px;
+    font-size:68px;
+    font-weight:900;
     margin-bottom:20px;
+
+    text-shadow:
+        0 4px 10px rgba(0,0,0,.8),
+        0 0 20px rgba(255,255,255,.3);
+
+    position:relative;
+    z-index:2;
 }
 
 .hero p{
-    font-size:20px;
+    font-size:22px;
     opacity:.95;
+    text-shadow:0 2px 10px rgba(0,0,0,.6);
+    position:relative;
+    z-index:2;
 }
 
 .hero-btn{
-    margin-top:25px;
-    padding:12px 28px;
+    position:relative;
+    z-index:2;
+
+    margin-top:30px;
+    padding:14px 35px;
+
     border:none;
-    border-radius:8px;
-    background:white;
-    color:#667eea;
+    border-radius:10px;
+
+    background:#ffffff;
+    color:#4f46e5;
     font-weight:bold;
+    font-size:16px;
+
     cursor:pointer;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,255,255,.3);
 }
 
 .card{
@@ -230,7 +269,7 @@ body{
 .code{
     background: linear-gradient(
         135deg,
-        rgba(67,56,202,.9),
+        rgba(145, 137, 231, 0.9),
         rgba(124,58,237,.9)
     );
 
